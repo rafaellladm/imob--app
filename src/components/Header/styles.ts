@@ -6,6 +6,8 @@ export const HeaderContainer = styled.header`
   justify-content: space-between;
   padding: 1.125rem 3rem;
   gap: 3rem;
+  top: 0;
+  position: fixed;
 
   font-weight: bold;
   font-size: 1.2rem;
@@ -14,9 +16,10 @@ export const HeaderContainer = styled.header`
   height: 3.5rem;
   overflow: hidden;
   background: ${(props) => props.theme['blue-300']};
+  box-shadow: 0 0.5px 2px ${(props) => props.theme['gray-100']};
 
   img {
-    width: 4rem;
+    width: 5rem;
   }
 
   nav {
